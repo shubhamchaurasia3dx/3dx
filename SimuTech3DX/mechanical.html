@@ -1,193 +1,48 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<style>
-/**home page most importent ********************** **/
+<meta charset="utf-8">
+<title>SimuTech3DX</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta content="" name="keywords">
+<meta content="" name="description">
 
-         .accordion {
-         width: 100%;
-         height: 450px;
-         overflow: hidden;
-         margin-top: 50px;
-         }
-         .accordion ul {
-         width: 100%;
-         display: table;
-         table-layout: fixed;
-         margin: 0;
-         padding: 0;
-         }
-         .accordion ul:hover li {
-         width: 12%;
-         }
-         .accordion ul li {
-         display: table-cell;
-         vertical-align: bottom;
-         position: relative;
-         width: 16.666%;
-         height: 450px;
-         background-repeat: no-repeat;
-         background-position: center center;
-         transition: all 500ms ease;
-         }
-         .accordion ul:hover li:hover {
-         width: 22%;
-         }
-         .accordion ul li div {
-         display: block;
-         overflow: hidden;
-         width: 100%;
-         }
-         .accordion ul:hover li:hover a {
-         background: transparent;
-         }
-         .accordion ul li div a {
-         display: block;
-         height: 450px;
-         width: 100%;
-         position: relative;
-         z-index: 3;
-         vertical-align: bottom;
-         padding: 0;
-         box-sizing: border-box;
-         color: #000;
-         text-decoration: none;
-         transition: all 200ms ease;
-         background: rgba(30, 30, 39, 0.35);
-         }
-         .accordion ul:hover li:hover a h3 {
-         text-align: center;
-         line-height: 80px;
-         background: rgba(61, 69, 163, 0.62);
-         left: 0px;
-         }
-         .accordion ul:hover li:hover a * {
-         opacity: 1;
-         -webkit-transform: translateX(0);
-         transform: translateX(0);
-         }
-         .accordion ul li div a h3 {
-         text-overflow: clip;
-         text-transform: uppercase;
-         bottom: 0;
-         left:20px;
-         position: absolute;
-         color: #fff;
-         opacity: 1;
-         font-size: 1em;
-         font-weight: bold;
-         -ms-transform-origin: 0 0 0;
-         -webkit-transform-origin: 0 0 0;
-         transform-origin: 0 0 0;
-         width: 100%;
-         text-align: center !important;
-         line-height: 80px;
-         }
-         .accordion ul li div a * {
-         opacity: 0;
-         margin: 0;
-         width: 100%;
-         text-overflow: ellipsis;
-         position: relative;
-         z-index: 5;
-         white-space: nowrap;
-         overflow: hidden;
-         -webkit-transform: translateX(-20px);
-         transform: translateX(-20px);
-         -webkit-transition: all 400ms ease;
-         transition: all 400ms ease;
-         }
-         .accordion ul:hover li:hover:nth-child(2) a h3, .accordion ul:hover li:hover:nth-child(4) a h3, .accordion ul:hover li:hover:nth-child(6) a h3 {
-         }
-         .accordion ul li:nth-child(2) a, .accordion ul li:nth-child(4) a, .accordion ul li:nth-child(6) a {
-         background: rgba(30, 30, 39, 0.55);
-         }
-        
+<!-- Favicons -->
+<link href="img/favicon.png" rel="icon">
+<link href="img/apple-touch-icon.png" rel="apple-touch-icon">
 
+<!-- Google Fonts -->
+<link
+	href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Roboto:100,300,400,500,700|Philosopher:400,400i,700,700i"
+	rel="stylesheet">
 
+<!-- Bootstrap css -->
 
+<!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+<link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-.vertical-tab-1 {
-background: url("img/GIF/aero2.jpg") center no-repeat;
-background-size: cover;
-}
-.vertical-tab-2 {
-background: url("img/GIF/bus.jpg") center no-repeat;
-background-size: cover;
-}
-.vertical-tab-3 {
-background: url("img/GIF/equipment2.jpg") center no-repeat;
-background-size: cover;
-}
-.vertical-tab-4 {
-background: url("img/GIF/analysis4.jpg") center no-repeat;
-background-size: cover;
-}
+<!-- Libraries CSS Files -->
+<link href="lib/owlcarousel/assets/owl.carousel.min.css"
+	rel="stylesheet">
+<link href="lib/owlcarousel/assets/owl.theme.default.min.css"
+	rel="stylesheet">
+<link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+<link href="lib/animate/animate.min.css" rel="stylesheet">
+<link href="lib/modal-video/css/modal-video.min.css" rel="stylesheet">
 
-
-
-@media screen and (max-width: 768px) { 
-	.fixed-top .navbar-toggler {
-    background: #585fb1;
-    color: #fff;
-    padding: 0.6em;
-    outline: none;
-}
-	.accordion-slider {
-    background: none !important;
-    margin:1em 0;
-}
-	.accordion ul:hover li:hover a h3{
-		background: none !important;
-	}
-	.accordion ul:hover li:hover a * {
-    opacity: 1;
-     -webkit-transform: rotate(270deg) !important; 
-    transform: rotateZ(270deg) !important;
-}
-	.accordion{
-		    margin-top: 80px !important;
-    -webkit-transform: rotateZ(90deg);
-    transform: rotateZ(90deg);
-    max-width: 450px;
-	}
-.accordion ul li div a h3{
-    transform: rotateZ(270deg);
-    line-height: 30px !important;
-
-}
-
-.accordion ul li div a *{
-	overflow: initial !important;
-}
-
-.accordion,.accordion ul li div a,.accordion ul li{
-height: 320px !important;
-    text-align: center;
-    margin: 0 auto;
-    width: 100% !important;
-    max-width: 400px;
-}
-
-
+<!-- Main Stylesheet File -->
+<link href="css/style.css" rel="stylesheet">
+<link href="css/responsive.css" rel="stylesheet">
+<style type="text/css">
+  img{
+    width: 100%;
+  }
 </style>
-
-  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Libraries CSS Files -->
-  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="lib/owlcarousel/assets/owl.theme.default.min.css" rel="stylesheet">
-  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="lib/animate/animate.min.css" rel="stylesheet">
-  <link href="lib/modal-video/css/modal-video.min.css" rel="stylesheet">
-
-  <!-- Main Stylesheet File -->
-  <link href="css/style.css" rel="stylesheet">
-
 </head>
 
 <body>
 
-  <header id="header" class="header header-hide">
+	<header id="header" class="header header-hide">
 		<div class="container">
 
 			<div id="logo" class="pull-left">
@@ -198,10 +53,17 @@ height: 320px !important;
 
 			<nav id="nav-menu-container">
 				<ul class="nav-menu">
-					<li class="menu-active"><a href="index.html">Home</a></li>
-					<li><a href="mechanical.html">Mechanical</a></li>
-					<li><a href="civil.html">Civil</a></li>
-					<li><a href="#contact">Contact</a></li>
+					<li class="menu-active"><a href="#hero">Home</a></li>
+					<li class="menu-has-children">
+						<a href="index.html">Services</a>
+						<ul>
+							<li><a href="mechanical.html">Mechanical</a></li>
+							<li><a href="civil.html">Civil</a></li>
+						</ul>
+					</li>
+					<li><a href="#videos">Videos</a></li>
+					<li><a href="#team">Team</a></li>
+					<li><a href="#contact">Contact1</a></li>
 				</ul>
 			</nav>
 			<!-- #nav-menu-container -->
@@ -210,47 +72,50 @@ height: 320px !important;
 	<!-- #header -->
 
 
-
-  <!--==========================
-    Hero Section
-  ============================-->
-  <section id="hero" class="wow fadeIn">
-    <div class="hero-container">
+<section id="mechanical-top-section" class="wow fadeIn">
+    <div class=" container-fluid hero-container" >
+	<div class="row accordion-slider">
+	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 p-0">
       <div class="accordion">
                   <ul>
                      <li class="vertical-tab-1">
                         <div>
-                           <a href="#Aerospace">
+                           <a href="#Aerospace" class="scrolly">
                               <h3>Aerospace</h3>
                            </a>
                         </div>
                      </li>
-                     <li class="vertical-tab-2">
+                     <li class="vertical-tab-2" >
                         <div>
-                           <a href="#Automobile">
+                           <a href="#Automobile" class="scrolly">
                               <h3>Automobile</h3>
                            </a>
                         </div>
                      </li>
                      <li class="vertical-tab-3">
                         <div>
-                           <a href="#Industrial">
+                           <a href="#Industrial" class="scrolly">
                               <h3>Industrial</h3>
                            </a>
                         </div>
                      </li>
                      <li class="vertical-tab-4">
                         <div>
-                           <a href="#Analysis">
+                           <a href="#Analysis" class="scrolly">
                               <h3>Analysis</h3>
                            </a>
                         </div>
                      </li>
                   </ul>
         </div>
-
+</div>
+</div>
     </div>
   </section>
+  <!--==========================
+    Hero Section
+  ============================-->
+  
   <!-- #hero -->
 
   <!--==========================
@@ -265,11 +130,11 @@ height: 320px !important;
        
 				<div class="row">
 
-					<div class="col-md-12 col-lg-8">
-					<img src="img/GIF/aero2.jpg" align="left" class="img-responsive" style="height:530px; width:720px;"></a>
+					<div class="col-md-8 col-xs-12 col-sm-8 col-lg-8">
+					<img src="img/GIF/aero2.jpg" align="left" class="img-responsive"></a>
 					</div>
 					
-					<div class="col-md-12 col-lg-4">
+					<div class="col-md-8 col-xs-12 col-sm-4 col-lg-4">
         
 					<div class="table" style="border:2px solid #a1a1a1; margin-top:25px">
 					<h3>Offering</h3>
@@ -383,11 +248,11 @@ height: 320px !important;
        
 				<div class="row">
 
-					<div class="col-md-12 col-lg-8">
-					<img src="img/GIF/bus.jpg" align="left" class="img-responsive" style="height:530px; width:720px;"></a>
+					<div class="col-md-8 col-xs-12 col-sm-8 col-lg-8">
+					<img src="img/GIF/bus.jpg" align="left" class="img-responsive" ></a>
 					</div>
 					
-					<div class="col-md-12 col-lg-4">
+					<div class="col-md-8 col-xs-12 col-sm-4 col-lg-4">
         
 					<div class="table" style="border:2px solid #a1a1a1; margin-top:25px">
 					<h3>Offering</h3>
@@ -500,11 +365,11 @@ height: 320px !important;
        
 				<div class="row">
 
-					<div class="col-md-12 col-lg-8">
-					<img src="img/GIF/equipment2.jpg" align="left" class="img-responsive" style="height:530px; width:720px;"></a>
+					<div class="col-md-8 col-xs-12 col-sm-8 col-lg-8">
+					<img src="img/GIF/equipment2.jpg" align="left" class="img-responsive" ></a>
 					</div>
 					
-					<div class="col-md-12 col-lg-4">
+					<div class="col-md-4 col-xs-12 col-sm-4 col-lg-4">
         
 					<div class="table" style="border:2px solid #a1a1a1; margin-top:25px">
 					<h3>Offering</h3>
@@ -617,11 +482,11 @@ height: 320px !important;
        
 				<div class="row">
 
-					<div class="col-md-12 col-lg-8">
-					<img src="img/GIF/analysis4.jpg" align="left" class="img-responsive" style="height:530px; width:720px;"></a>
+					<div class="col-md-8 col-xs-12 col-sm-8 col-lg-8">
+					<img src="img/GIF/analysis4.jpg" align="left" class="img-responsive" ></a>
 					</div>
 					
-					<div class="col-md-12 col-lg-4">
+					<div class="col-md-4 col-xs-12 col-sm-4 col-lg-4">
         
 					<div class="table" style="border:2px solid #a1a1a1; margin-top:25px">
 					<h3>Offering</h3>
@@ -920,7 +785,37 @@ height: 320px !important;
   ga('send', 'pageview');
 
 </script>
+<script>
+        $(document).ready(function() {
 
+            var scrollLink = $('.scrolly');
+
+            // Smooth scrolling
+            scrollLink.click(function(e) {
+                e.preventDefault();
+                $('body,html').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 1000);
+            });
+
+            // Active link switching
+            $(window).scroll(function() {
+                var scrollbarLocation = $(this).scrollTop();
+
+                scrollLink.each(function() {
+
+                    var sectionOffset = $(this.hash).offset();
+
+                    if (sectionOffset <= scrollbarLocation) {
+                        $(this).parent().addClass('active');
+                        $(this).parent().siblings().removeClass('active');
+                    }
+                })
+
+            })
+
+        })
+    </script>
 
 </body>
 </html>

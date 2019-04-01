@@ -143,7 +143,7 @@ span {
   top: 0;
   right: 0;
   height: 48px;
-  z-index: 3;
+  z-index: 99;
   transition: all 0.5s ease;
 }
 
@@ -553,7 +553,7 @@ body.mobile-nav-active #mobile-nav-toggle i {
 
 .section-title h2 {
   font-family: "Roboto", sans-serif;
-  font-size: 45px;
+  font-size: 44px;
   font-weight: 100;
   letter-spacing: 2px;
   margin-bottom: 20px;
@@ -1053,4 +1053,185 @@ body.mobile-nav-active #mobile-nav-toggle i {
 .footer .copyrights p a, .footer .copyrights .credits a {
   letter-spacing: 0;
   color: #71c55d;
+}
+
+
+
+/**home page most importent ********************** **/
+
+         .accordion {
+         width: 100%;
+         height: 450px;
+         overflow: hidden;
+         margin-top: 50px;
+         }
+         .accordion ul {
+         width: 100%;
+         display: table;
+         table-layout: fixed;
+         margin: 0;
+         padding: 0;
+         }
+         .accordion ul:hover li {
+         width: 12%;
+         }
+         .accordion ul li {
+         display: table-cell;
+         vertical-align: bottom;
+         position: relative;
+         width: 16.666%;
+         height: 450px;
+         background-repeat: no-repeat;
+         background-position: center center;
+         transition: all 500ms ease;
+         }
+         .accordion ul:hover li:hover {
+         width: 22%;
+         }
+         .accordion ul li div {
+         display: block;
+         overflow: hidden;
+         width: 100%;
+         }
+         .accordion ul:hover li:hover a {
+         background: transparent;
+         }
+         .accordion ul li div a {
+         display: block;
+         height: 450px;
+         width: 100%;
+         position: relative;
+         z-index: 3;
+         vertical-align: bottom;
+         padding: 0;
+         box-sizing: border-box;
+         color: #000;
+         text-decoration: none;
+         transition: all 200ms ease;
+         background: rgba(30, 30, 39, 0.35);
+         }
+         .accordion ul:hover li:hover a h3 {
+         text-align: center;
+         line-height: 80px;
+         background: rgba(61, 69, 163, 0.62);
+         left: 0px;
+         }
+         .accordion ul:hover li:hover a * {
+         opacity: 1;
+         -webkit-transform: translateX(0);
+         transform: translateX(0);
+         }
+         .accordion ul li div a h3 {
+         text-overflow: clip;
+         text-transform: uppercase;
+         bottom: 0;
+         left:20px;
+         position: absolute;
+         color: #fff;
+         opacity: 1;
+         font-size: 1em;
+         font-weight: bold;
+         -ms-transform-origin: 0 0 0;
+         -webkit-transform-origin: 0 0 0;
+         transform-origin: 0 0 0;
+         width: 100%;
+         text-align: center !important;
+         line-height: 80px;
+         }
+         .accordion ul li div a * {
+         opacity: 0;
+         margin: 0;
+         width: 100%;
+         text-overflow: ellipsis;
+         position: relative;
+         z-index: 5;
+         white-space: nowrap;
+         overflow: hidden;
+         -webkit-transform: translateX(-20px);
+         transform: translateX(-20px);
+         -webkit-transition: all 400ms ease;
+         transition: all 400ms ease;
+         }
+         .accordion ul:hover li:hover:nth-child(2) a h3, .accordion ul:hover li:hover:nth-child(4) a h3, .accordion ul:hover li:hover:nth-child(6) a h3 {
+         }
+         .accordion ul li:nth-child(2) a, .accordion ul li:nth-child(4) a, .accordion ul li:nth-child(6) a {
+         background: rgba(30, 30, 39, 0.55);
+         }
+        
+
+
+
+
+.vertical-tab-1 {
+background: url("../img/GIF/aero2.jpg") center no-repeat;
+background-size: cover;
+}
+.vertical-tab-2 {
+background: url("../img/GIF/bus.jpg") center no-repeat;
+background-size: cover;
+}
+.vertical-tab-3 {
+background: url("../img/GIF/equipment2.jpg") center no-repeat;
+background-size: cover;
+}
+.vertical-tab-4 {
+background: url("../img/GIF/analysis4.jpg") center no-repeat;
+background-size: cover;
+}
+
+
+
+@media screen and (max-width: 768px) { 
+	.fixed-top .navbar-toggler {
+    background: #585fb1;
+    color: #fff;
+    padding: 0.6em;
+    outline: none;
+}
+	.accordion-slider {
+    background: none !important;
+    margin:1em 0;
+}
+	.accordion ul:hover li:hover a h3{
+		background: none !important;
+	}
+	.accordion ul:hover li:hover a * {
+    opacity: 1;
+     -webkit-transform: rotate(270deg) !important; 
+    transform: rotateZ(270deg) !important;
+}
+	.accordion{
+		  
+    -webkit-transform: rotateZ(90deg);
+    transform: rotateZ(90deg);
+    max-width: 450px;
+	}
+.accordion ul li div a h3{
+    transform: rotateZ(270deg);
+    line-height: 30px !important;
+
+}
+
+.accordion ul li div a *{
+	overflow: initial !important;
+}
+
+.accordion,.accordion ul li div a,.accordion ul li{
+
+    text-align: center;
+    margin: 0 auto;
+    width: 100% !important;
+    max-width: 400px;
+}
+
+section#mechanical-top-section {
+    position: relative;
+    background-color: #fff;
+}
+
+section#Aerospace img {
+    width: 100%;
+}
+section#Aerospace img {
+    width: 100%;
 }
