@@ -1,4 +1,4 @@
-@charset "UTF-8";
+﻿@charset "UTF-8";
 /*
  SimuTech3DX.com
 */
@@ -574,35 +574,6 @@ body.mobile-nav-active #mobile-nav-toggle i {
 }
 
 
-/* Features Section
---------------------------------*/
-#Aerospace {
-  display: inline-block;
-  height: 100%;
-  width: 100%;
-}
-
-#Aerospace .feature-block {
-  background: #fff none repeat scroll 0 0;
-  padding: 30px 20px;
-  margin-bottom: 30px;
-  transition: all 0.5s ease-in-out 0s;
-}
-
-#Aerospace .feature-block:hover {
-  box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
-  transition: all 0.5s ease-in-out 0s;
-}
-
-#Aerospace .feature-block h4 {
-  margin-bottom: 20px;
-}
-
-#Aerospace .feature-block p {
-  margin-bottom: 0;
-}
-
-
 
 /* Testimonials Section
 --------------------------------*/
@@ -1175,7 +1146,28 @@ background: url("../img/GIF/equipment2.jpg") center no-repeat;
 background-size: cover;
 }
 .vertical-tab-4 {
-background: url("../img/GIF/analysis4.jpg") center no-repeat;
+background: url("../img/GIF/analysis6.jpg") center no-repeat;
+background-size: cover;
+}
+.vertical-tab-5 {
+background: url("../img/GIF/proj.jpg") center no-repeat;
+background-size: cover;
+}
+
+.vertical-tab-6 {
+background: url("../img/GIF/structure4.jpg") center no-repeat;
+background-size: cover;
+}
+.vertical-tab-7 {
+background: url("../img/GIF/structure2.jpg") center no-repeat;
+background-size: cover;
+}
+.vertical-tab-8 {
+background: url("../img/GIF/Joint.jpg") center no-repeat;
+background-size: cover;
+}
+.vertical-tab-9 {
+background: url("../img/GIF/BIM3.jpg") center no-repeat;
 background-size: cover;
 }
 
