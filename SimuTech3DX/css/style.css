@@ -9,7 +9,15 @@ body {
   background-color: #fff;
   color: #333;
 }
-
+img {
+    width: 100%;
+}
+div#logo img {
+    width: 50px !important;
+}
+.footer-logo img {
+    width: 180px !important;
+}
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
@@ -1142,11 +1150,11 @@ background: url("../img/GIF/bus.jpg") center no-repeat;
 background-size: cover;
 }
 .vertical-tab-3 {
-background: url("../img/GIF/equipment2.jpg") center no-repeat;
+background: url("../img/GIF/Equipment2.jpg") center no-repeat;
 background-size: cover;
 }
 .vertical-tab-4 {
-background: url("../img/GIF/analysis6.jpg") center no-repeat;
+background: url("../img/GIF/Analysis6.jpg") center no-repeat;
 background-size: cover;
 }
 .vertical-tab-5 {
@@ -1155,7 +1163,7 @@ background-size: cover;
 }
 
 .vertical-tab-6 {
-background: url("../img/GIF/structure4.jpg") center no-repeat;
+background: url("../img/GIF/Structure4.jpg") center no-repeat;
 background-size: cover;
 }
 .vertical-tab-7 {
@@ -1302,3 +1310,4 @@ section#Aerospace img {
 #features .feature-block p {
   margin-bottom: 0;
 }
+
